@@ -1,0 +1,66 @@
+import { Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+
+export const Footer = () => {
+  const { t } = useLanguage();
+
+  return (
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-secondary-blue rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">IT</span>
+              </div>
+              <span className="font-inter font-semibold text-xl">
+                IT Support Marrakech
+              </span>
+            </div>
+            <p className="font-inter text-primary-foreground/80 leading-relaxed">
+              {t('footerText')}
+            </p>
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-4">
+            <h3 className="font-inter font-semibold text-lg">{t('contact')}</h3>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-secondary-blue" />
+                <span className="font-inter">+212 6XX XXX XXX</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-secondary-blue" />
+                <span className="font-inter">contact@itsupport-marrakech.com</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin className="w-5 h-5 text-secondary-blue" />
+                <span className="font-inter">Marrakech, Morocco</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Services Quick Links */}
+          <div className="space-y-4">
+            <h3 className="font-inter font-semibold text-lg">{t('services')}</h3>
+            <ul className="space-y-2 font-inter text-primary-foreground/80">
+              <li>• {t('service1Title')}</li>
+              <li>• {t('service2Title')}</li>
+              <li>• {t('service3Title')}</li>
+              <li>• {t('service4Title')}</li>
+              <li>• {t('service5Title')}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-primary-light/20 mt-8 pt-8">
+          <div className="text-center font-inter text-primary-foreground/60">
+            <p>&copy; 2024 IT Support Marrakech. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
