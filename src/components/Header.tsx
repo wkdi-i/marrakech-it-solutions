@@ -26,12 +26,15 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
             <img 
               src={new URL('../assets/sahia-logo.png', import.meta.url).href} 
-              alt="SAHIA IT Support" 
+              alt="SAHATECH" 
               className="h-10 w-auto"
             />
+            <span className="font-inter font-semibold text-primary text-xl">
+              SAHATECH
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
