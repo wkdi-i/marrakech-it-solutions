@@ -37,10 +37,8 @@ const translations = {
     service2Desc: 'Professional network setup, configuration, and troubleshooting services.',
     service3Title: 'Security Camera Setup',
     service3Desc: 'Complete security camera installation and monitoring system setup.',
-    service4Title: 'Cloud & Backup Solutions',
-    service4Desc: 'Secure cloud storage and automated backup solutions for your data.',
     service5Title: 'On-Demand IT Support',
-    service5Desc: 'Fast response IT support whenever you need technical assistance.',
+    service5Desc: 'Fast response IT support whenever you need technical assistance - available 24/7.',
     
     // Why Choose Us
     whyTitle: 'Why Choose Our IT Services?',
@@ -87,10 +85,8 @@ const translations = {
     service2Desc: 'Services professionnels d\'installation, configuration et dépannage réseau.',
     service3Title: 'Installation de Caméras de Sécurité',
     service3Desc: 'Installation complète de caméras de sécurité et systèmes de surveillance.',
-    service4Title: 'Solutions Cloud et Sauvegarde',
-    service4Desc: 'Stockage cloud sécurisé et solutions de sauvegarde automatisées pour vos données.',
     service5Title: 'Support Informatique à la Demande',
-    service5Desc: 'Support IT rapide chaque fois que vous avez besoin d\'assistance technique.',
+    service5Desc: 'Support IT rapide chaque fois que vous avez besoin d\'assistance technique - disponible 24/7.',
     
     // Why Choose Us
     whyTitle: 'Pourquoi choisir nos services IT?',

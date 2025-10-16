@@ -10,14 +10,11 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-secondary-blue rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">IT</span>
-              </div>
-              <span className="font-inter font-semibold text-xl">
-                IT Support Marrakech
-              </span>
-            </div>
+            <img 
+              src={new URL('../assets/sahia-logo.png', import.meta.url).href} 
+              alt="SAHIA IT Support" 
+              className="h-12 w-auto"
+            />
             <p className="font-inter text-primary-foreground/80 leading-relaxed">
               {t('footerText')}
             </p>
@@ -29,7 +26,7 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-secondary-blue" />
-                <span className="font-inter">+212 6XX XXX XXX</span>
+                <span className="font-inter">+212600808474</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-secondary-blue" />
@@ -49,7 +46,6 @@ export const Footer = () => {
               <li>• {t('service1Title')}</li>
               <li>• {t('service2Title')}</li>
               <li>• {t('service3Title')}</li>
-              <li>• {t('service4Title')}</li>
               <li>• {t('service5Title')}</li>
             </ul>
           </div>

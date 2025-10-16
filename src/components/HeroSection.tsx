@@ -40,6 +40,7 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               className="btn-hero font-inter font-semibold px-8 py-4 text-lg group"
+              onClick={() => window.open('https://wa.me/212600808474', '_blank')}
             >
               {t('requestSupport')}
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

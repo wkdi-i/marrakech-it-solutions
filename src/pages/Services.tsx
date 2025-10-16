@@ -1,4 +1,4 @@
-import { Computer, Network, Camera, Cloud, Headphones, CheckCircle } from 'lucide-react';
+import { Computer, Network, Camera, Headphones, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -40,24 +40,13 @@ const Services = () => {
       ],
     },
     {
-      icon: Cloud,
-      titleKey: 'service4Title',
-      descKey: 'service4Desc',
-      features: [
-        'Cloud storage setup',
-        'Automated backup solutions',
-        'Data recovery services',
-        'Cloud migration assistance',
-      ],
-    },
-    {
       icon: Headphones,
       titleKey: 'service5Title',
       descKey: 'service5Desc',
       features: [
         'Remote technical support',
         'On-site service visits',
-        'Emergency IT assistance',
+        'Emergency IT assistance - 24/7',
         'Regular maintenance checks',
       ],
     },

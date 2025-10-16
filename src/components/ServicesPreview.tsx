@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Computer, Network, Camera, Cloud, Headphones, ArrowRight } from 'lucide-react';
+import { Computer, Network, Camera, Headphones, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -21,11 +21,6 @@ export const ServicesPreview = () => {
       icon: Camera,
       titleKey: 'service3Title',
       descKey: 'service3Desc',
-    },
-    {
-      icon: Cloud,
-      titleKey: 'service4Title',
-      descKey: 'service4Desc',
     },
     {
       icon: Headphones,

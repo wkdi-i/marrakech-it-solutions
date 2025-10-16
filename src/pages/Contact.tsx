@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const phoneNumber = '212600000000'; // Replace with actual WhatsApp number
+    const phoneNumber = '212600808474';
     const message = encodeURIComponent(`Hello! I'm interested in your IT support services.`);
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
@@ -143,8 +143,8 @@ const Contact = () => {
                       <Phone className="w-6 h-6 text-secondary-blue flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-inter font-semibold text-primary">Phone</h3>
-                        <p className="font-inter text-muted-foreground">+212 6XX XXX XXX</p>
-                        <p className="font-inter text-sm text-muted-foreground">Available 9 AM - 6 PM</p>
+                        <p className="font-inter text-muted-foreground">+212600808474</p>
+                        <p className="font-inter text-sm text-muted-foreground">Available 24/7</p>
                       </div>
                     </div>
 
@@ -196,17 +196,10 @@ const Contact = () => {
                   </h3>
                   <div className="space-y-2 font-inter text-muted-foreground">
                     <div className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span className="text-primary font-semibold">9:00 AM - 6:00 PM</span>
+                      <span>Availability</span>
+                      <span className="text-primary font-semibold">24/7</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span>Saturday</span>
-                      <span className="text-primary font-semibold">9:00 AM - 2:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday</span>
-                      <span className="text-muted-foreground">Emergency Only</span>
-                    </div>
+                    <p className="text-sm">We're available around the clock to support your IT needs, including emergency services.</p>
                   </div>
                 </div>
               </div>

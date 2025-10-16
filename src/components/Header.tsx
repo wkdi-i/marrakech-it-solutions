@@ -27,12 +27,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-gradient rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">IT</span>
-            </div>
-            <span className="font-inter font-semibold text-primary text-lg">
-              IT Support Marrakech
-            </span>
+            <img 
+              src={new URL('../assets/sahia-logo.png', import.meta.url).href} 
+              alt="SAHIA IT Support" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
