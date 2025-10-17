@@ -10,45 +10,25 @@ const Services = () => {
       icon: Computer,
       titleKey: 'service1Title',
       descKey: 'service1Desc',
-      features: [
-        'Hardware diagnostics and repair',
-        'Software installation and updates',
-        'Performance optimization',
-        'Virus removal and security',
-      ],
+      features: ['service1Feature1', 'service1Feature2', 'service1Feature3', 'service1Feature4'],
     },
     {
       icon: Network,
       titleKey: 'service2Title',
       descKey: 'service2Desc',
-      features: [
-        'Network setup and configuration',
-        'WiFi installation and optimization',
-        'Network security implementation',
-        'Troubleshooting connectivity issues',
-      ],
+      features: ['service2Feature1', 'service2Feature2', 'service2Feature3', 'service2Feature4'],
     },
     {
       icon: Camera,
       titleKey: 'service3Title',
       descKey: 'service3Desc',
-      features: [
-        'CCTV system installation',
-        'IP camera configuration',
-        'Remote monitoring setup',
-        'Security system maintenance',
-      ],
+      features: ['service3Feature1', 'service3Feature2', 'service3Feature3', 'service3Feature4'],
     },
     {
       icon: Headphones,
       titleKey: 'service5Title',
       descKey: 'service5Desc',
-      features: [
-        'Remote technical support',
-        'On-site service visits',
-        'Emergency IT assistance - 24/7',
-        'Regular maintenance checks',
-      ],
+      features: ['service5Feature1', 'service5Feature2', 'service5Feature3', 'service5Feature4'],
     },
   ];
 
@@ -63,7 +43,7 @@ const Services = () => {
             </h1>
             <div className="w-24 h-1 bg-secondary-blue mx-auto mb-8 rounded-full"></div>
             <p className="font-inter text-xl text-muted-foreground leading-relaxed">
-              Comprehensive IT solutions designed to meet your technology needs and keep your business running smoothly.
+              {t('servicesHeroDesc')}
             </p>
           </div>
         </div>
@@ -94,12 +74,12 @@ const Services = () => {
 
                   {/* Service Features */}
                   <div className="space-y-3">
-                    <h4 className="font-inter font-semibold text-primary">What's included:</h4>
+                    <h4 className="font-inter font-semibold text-primary">{t('whatsIncluded')}</h4>
                     <ul className="space-y-2">
-                      {service.features.map((feature, featureIndex) => (
+                      {service.features.map((featureKey, featureIndex) => (
                         <li key={featureIndex} className="flex items-center font-inter text-sm text-muted-foreground">
                           <CheckCircle className="w-4 h-4 text-accent-success mr-3 flex-shrink-0" />
-                          {feature}
+                          {t(featureKey)}
                         </li>
                       ))}
                     </ul>
@@ -112,11 +92,10 @@ const Services = () => {
           {/* CTA Section */}
           <div className="text-center mt-16 p-8 bg-subtle-gradient rounded-2xl">
             <h2 className="font-inter font-bold text-2xl text-primary mb-4">
-              Need Custom IT Solutions?
+              {t('customSolutionsTitle')}
             </h2>
             <p className="font-inter text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Every business has unique IT requirements. Contact us to discuss your specific needs 
-              and get a customized solution that fits your budget and objectives.
+              {t('customSolutionsDesc')}
             </p>
             <Button size="lg" className="btn-hero font-inter font-semibold">
               {t('requestSupport')}

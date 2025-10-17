@@ -8,25 +8,25 @@ const WhyChooseUs = () => {
     {
       icon: DollarSign,
       titleKey: 'why1',
-      description: 'No hidden fees or surprise charges. We provide clear, upfront pricing for all our services with detailed cost breakdowns.',
+      descKey: 'why1Desc',
       color: 'text-accent-success',
     },
     {
       icon: Clock,
       titleKey: 'why2',
-      description: 'Quick response times with most issues resolved within 24-48 hours. Emergency support available for critical problems.',
+      descKey: 'why2Desc',
       color: 'text-secondary-blue',
     },
     {
       icon: Settings,
       titleKey: 'why3',
-      description: 'Every solution is tailored to your specific needs and budget. We don\'t believe in one-size-fits-all approaches.',
+      descKey: 'why3Desc',
       color: 'text-accent-blue',
     },
     {
       icon: Users,
       titleKey: 'why4',
-      description: 'Committed to excellence in every interaction. Our goal is to build long-term relationships based on trust and results.',
+      descKey: 'why4Desc',
       color: 'text-primary',
     },
   ];
@@ -34,18 +34,18 @@ const WhyChooseUs = () => {
   const additionalBenefits = [
     {
       icon: Shield,
-      title: 'Security Focused',
-      description: 'Your data security is our top priority. We implement best practices to protect your information.',
+      titleKey: 'securityTitle',
+      descKey: 'securityDesc',
     },
     {
       icon: Headphones,
-      title: '24/7 Support Available',
-      description: 'Round-the-clock support for critical issues. We\'re here when you need us most.',
+      titleKey: 'support247Title',
+      descKey: 'support247Desc',
     },
     {
       icon: Award,
-      title: 'Proven Experience',
-      description: 'Years of experience serving businesses and individuals in the Marrakech region.',
+      titleKey: 'experienceTitle',
+      descKey: 'experienceDesc',
     },
   ];
 
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
             </h1>
             <div className="w-24 h-1 bg-secondary-blue mx-auto mb-8 rounded-full"></div>
             <p className="font-inter text-xl text-muted-foreground leading-relaxed">
-              Discover what sets our IT support services apart and why businesses in Marrakech trust us with their technology needs.
+              {t('whyHeroDesc')}
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
                       {t(benefit.titleKey)}
                     </h3>
                     <p className="font-inter text-muted-foreground leading-relaxed">
-                      {benefit.description}
+                      {t(benefit.descKey)}
                     </p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ const WhyChooseUs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-inter font-bold text-3xl text-primary mb-4">
-              More Reasons to Choose Us
+              {t('moreReasonsTitle')}
             </h2>
             <div className="w-16 h-1 bg-secondary-blue mx-auto rounded-full"></div>
           </div>
@@ -112,10 +112,10 @@ const WhyChooseUs = () => {
                     <Icon className="w-8 h-8 text-primary-foreground" />
                   </div>
                   <h3 className="font-inter font-semibold text-lg text-primary mb-3">
-                    {benefit.title}
+                    {t(benefit.titleKey)}
                   </h3>
                   <p className="font-inter text-muted-foreground leading-relaxed">
-                    {benefit.description}
+                    {t(benefit.descKey)}
                   </p>
                 </div>
               );
@@ -133,11 +133,10 @@ const WhyChooseUs = () => {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <blockquote className="font-inter text-xl text-primary-foreground leading-relaxed italic">
-                "The difference is in the details - professional service, transparent communication, 
-                and genuine care for our technology needs. Highly recommended for any business in Marrakech."
+                {t('testimonialQuote')}
               </blockquote>
               <cite className="font-inter text-primary-foreground/80 mt-4 block">
-                - Satisfied Business Client
+                {t('testimonialAuthor')}
               </cite>
             </div>
           </div>

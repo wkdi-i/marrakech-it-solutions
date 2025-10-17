@@ -59,6 +59,44 @@ const translations = {
     
     // Footer
     footerText: 'Professional IT Support Services in Marrakech',
+    
+    // Services Page Details
+    servicesHeroDesc: 'Comprehensive IT solutions designed to meet your technology needs and keep your business running smoothly.',
+    whatsIncluded: 'What\'s included:',
+    service1Feature1: 'Hardware diagnostics and repair',
+    service1Feature2: 'Software installation and updates',
+    service1Feature3: 'Performance optimization',
+    service1Feature4: 'Virus removal and security',
+    service2Feature1: 'Network setup and configuration',
+    service2Feature2: 'WiFi installation and optimization',
+    service2Feature3: 'Network security implementation',
+    service2Feature4: 'Troubleshooting connectivity issues',
+    service3Feature1: 'CCTV system installation',
+    service3Feature2: 'IP camera configuration',
+    service3Feature3: 'Remote monitoring setup',
+    service3Feature4: 'Security system maintenance',
+    service5Feature1: 'Remote technical support',
+    service5Feature2: 'On-site service visits',
+    service5Feature3: 'Emergency IT assistance - 24/7',
+    service5Feature4: 'Regular maintenance checks',
+    customSolutionsTitle: 'Need Custom IT Solutions?',
+    customSolutionsDesc: 'Every business has unique IT requirements. Contact us to discuss your specific needs and get a customized solution that fits your budget and objectives.',
+    
+    // Why Choose Us Page Details
+    whyHeroDesc: 'Discover what sets our IT support services apart and why businesses in Marrakech trust us with their technology needs.',
+    why1Desc: 'No hidden fees or surprise charges. We provide clear, upfront pricing for all our services with detailed cost breakdowns.',
+    why2Desc: 'Quick response times with most issues resolved within 24-48 hours. Emergency support available for critical problems.',
+    why3Desc: 'Every solution is tailored to your specific needs and budget. We don\'t believe in one-size-fits-all approaches.',
+    why4Desc: 'Committed to excellence in every interaction. Our goal is to build long-term relationships based on trust and results.',
+    moreReasonsTitle: 'More Reasons to Choose Us',
+    securityTitle: 'Security Focused',
+    securityDesc: 'Your data security is our top priority. We implement best practices to protect your information.',
+    support247Title: '24/7 Support Available',
+    support247Desc: 'Round-the-clock support for critical issues. We\'re here when you need us most.',
+    experienceTitle: 'Proven Experience',
+    experienceDesc: 'Years of experience serving businesses and individuals in the Marrakech region.',
+    testimonialQuote: '"The difference is in the details - professional service, transparent communication, and genuine care for our technology needs. Highly recommended for any business in Marrakech."',
+    testimonialAuthor: '- Satisfied Business Client',
   },
   fr: {
     // Navigation
@@ -107,6 +145,44 @@ const translations = {
     
     // Footer
     footerText: 'Services de Support Informatique Professionnel à Marrakech',
+    
+    // Services Page Details
+    servicesHeroDesc: 'Solutions informatiques complètes conçues pour répondre à vos besoins technologiques et assurer le bon fonctionnement de votre entreprise.',
+    whatsIncluded: 'Ce qui est inclus :',
+    service1Feature1: 'Diagnostic et réparation matériel',
+    service1Feature2: 'Installation et mises à jour logicielles',
+    service1Feature3: 'Optimisation des performances',
+    service1Feature4: 'Suppression de virus et sécurité',
+    service2Feature1: 'Configuration et installation réseau',
+    service2Feature2: 'Installation et optimisation WiFi',
+    service2Feature3: 'Mise en place de la sécurité réseau',
+    service2Feature4: 'Dépannage des problèmes de connectivité',
+    service3Feature1: 'Installation de systèmes de vidéosurveillance',
+    service3Feature2: 'Configuration de caméras IP',
+    service3Feature3: 'Installation de surveillance à distance',
+    service3Feature4: 'Maintenance des systèmes de sécurité',
+    service5Feature1: 'Support technique à distance',
+    service5Feature2: 'Visites de service sur site',
+    service5Feature3: 'Assistance informatique d\'urgence - 24/7',
+    service5Feature4: 'Vérifications de maintenance régulières',
+    customSolutionsTitle: 'Besoin de Solutions IT Personnalisées?',
+    customSolutionsDesc: 'Chaque entreprise a des besoins informatiques uniques. Contactez-nous pour discuter de vos besoins spécifiques et obtenir une solution personnalisée adaptée à votre budget et vos objectifs.',
+    
+    // Why Choose Us Page Details
+    whyHeroDesc: 'Découvrez ce qui distingue nos services de support informatique et pourquoi les entreprises de Marrakech nous font confiance pour leurs besoins technologiques.',
+    why1Desc: 'Aucun frais caché ni surprise. Nous proposons des tarifs clairs et transparents pour tous nos services avec des détails complets des coûts.',
+    why2Desc: 'Délais d\'intervention rapides avec la plupart des problèmes résolus sous 24 à 48 heures. Support d\'urgence disponible pour les problèmes critiques.',
+    why3Desc: 'Chaque solution est adaptée à vos besoins spécifiques et à votre budget. Nous ne croyons pas aux approches universelles.',
+    why4Desc: 'Engagement envers l\'excellence dans chaque interaction. Notre objectif est de construire des relations durables basées sur la confiance et les résultats.',
+    moreReasonsTitle: 'Autres Raisons de Nous Choisir',
+    securityTitle: 'Axé sur la Sécurité',
+    securityDesc: 'La sécurité de vos données est notre priorité absolue. Nous mettons en œuvre les meilleures pratiques pour protéger vos informations.',
+    support247Title: 'Support 24/7 Disponible',
+    support247Desc: 'Support permanent pour les problèmes critiques. Nous sommes là quand vous avez le plus besoin de nous.',
+    experienceTitle: 'Expérience Confirmée',
+    experienceDesc: 'Des années d\'expérience au service des entreprises et particuliers de la région de Marrakech.',
+    testimonialQuote: '"La différence est dans les détails - service professionnel, communication transparente et véritable attention à nos besoins technologiques. Hautement recommandé pour toute entreprise à Marrakech."',
+    testimonialAuthor: '- Client Entreprise Satisfait',
   }
 };
 
@@ -115,7 +191,7 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('fr');
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations['en']] || key;
