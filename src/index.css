@@ -86,57 +86,63 @@
   }
 
   .dark {
-    /* Dark background and foreground */
-    --background: 240 10% 8%;
-    --foreground: 0 0% 95%;
+    /* Softer dark background - deep charcoal instead of pure black */
+    --background: 220 15% 12%;
+    --foreground: 220 10% 88%;
 
-    /* Cards */
-    --card: 240 10% 12%;
-    --card-foreground: 0 0% 95%;
+    /* Cards - slightly lighter than background for depth */
+    --card: 220 15% 15%;
+    --card-foreground: 220 10% 88%;
 
-    --popover: 240 10% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 220 15% 15%;
+    --popover-foreground: 220 10% 88%;
 
-    /* Primary - Keep the brand colors vibrant in dark mode */
-    --primary: 0 0% 95%;
-    --primary-foreground: 240 10% 8%;
-    --primary-light: 0 0% 75%;
-    --primary-lighter: 0 0% 25%;
+    /* Primary - softer whites instead of pure white */
+    --primary: 220 10% 90%;
+    --primary-foreground: 220 15% 12%;
+    --primary-light: 220 10% 70%;
+    --primary-lighter: 220 10% 30%;
 
-    /* Secondary Blues - Adjusted for dark mode */
-    --secondary: 240 10% 15%;
-    --secondary-foreground: 0 0% 95%;
-    --secondary-blue: 195 100% 60%;
-    --secondary-blue-light: 195 80% 20%;
+    /* Secondary Blues - muted but still vibrant */
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 220 10% 88%;
+    --secondary-blue: 195 85% 55%;
+    --secondary-blue-light: 195 50% 25%;
 
-    /* Grays for dark mode */
-    --muted: 240 10% 15%;
-    --muted-foreground: 0 0% 65%;
-    --muted-dark: 0 0% 25%;
+    /* Grays for dark mode - warmer, softer tones */
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 65%;
+    --muted-dark: 220 10% 35%;
 
-    /* Accent colors - keep them vibrant */
-    --accent: 240 10% 15%;
-    --accent-foreground: 0 0% 95%;
-    --accent-blue: 195 100% 60%;
-    --accent-purple: 265 85% 65%;
-    --accent-pink: 340 90% 70%;
-    --accent-success: 120 60% 55%;
+    /* Accent colors - slightly desaturated for comfort */
+    --accent: 220 15% 18%;
+    --accent-foreground: 220 10% 88%;
+    --accent-blue: 195 75% 58%;
+    --accent-purple: 265 70% 60%;
+    --accent-pink: 340 75% 65%;
+    --accent-success: 120 50% 50%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 75% 58%;
+    --destructive-foreground: 220 10% 95%;
 
-    --border: 240 10% 20%;
-    --input: 240 10% 15%;
-    --ring: 195 100% 60%;
+    --border: 220 15% 25%;
+    --input: 220 15% 18%;
+    --ring: 195 75% 58%;
 
-    --sidebar-background: 240 10% 10%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 195 100% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 10% 15%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 240 10% 20%;
-    --sidebar-ring: 195 100% 60%;
+    --sidebar-background: 220 15% 14%;
+    --sidebar-foreground: 220 10% 88%;
+    --sidebar-primary: 195 75% 58%;
+    --sidebar-primary-foreground: 220 15% 12%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 220 10% 88%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 195 75% 58%;
+
+    /* Softer shadows for dark mode */
+    --shadow-soft: 0 4px 16px -4px hsl(220 20% 5% / 0.5);
+    --shadow-medium: 0 8px 32px -8px hsl(220 20% 5% / 0.6);
+    --shadow-strong: 0 16px 64px -16px hsl(220 20% 5% / 0.7);
+    --shadow-blue: 0 8px 32px -8px hsl(195 75% 58% / 0.25);
   }
 }
 
