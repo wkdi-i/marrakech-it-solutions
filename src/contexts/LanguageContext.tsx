@@ -97,6 +97,51 @@ const translations = {
     experienceDesc: 'Years of experience serving businesses and individuals in the Marrakech region.',
     testimonialQuote: '"The difference is in the details - professional service, transparent communication, and genuine care for our technology needs. Highly recommended for any business in Marrakech."',
     testimonialAuthor: '- Satisfied Business Client',
+    
+    // Contact Page
+    sendMessageTitle: 'Send us a Message',
+    yourFullName: 'Your full name',
+    yourEmail: 'your.email@example.com',
+    yourPhone: '+212 6XX XXX XXX',
+    describeNeeds: 'Describe your IT support needs or questions...',
+    contactInfo: 'Contact Information',
+    phoneLabel: 'Phone',
+    available247: 'Available 24/7',
+    emailLabel: 'Email',
+    replyWithin24: 'We reply within 24 hours',
+    locationLabel: 'Location',
+    marrakechMorocco: 'Marrakech, Morocco',
+    onsiteAvailable: 'On-site services available',
+    quickWhatsApp: 'Quick WhatsApp Support',
+    instantSupport: 'Get instant support via WhatsApp. Perfect for urgent technical issues.',
+    businessHours: 'Business Hours',
+    availability: 'Availability',
+    availableRoundClock: 'We\'re available around the clock to support your IT needs, including emergency services.',
+    
+    // About Page
+    profilePhotoPlaceholder: 'Space reserved for profile photo or company logo',
+    professionalExpert: 'Professional IT Support Expert',
+    aboutParagraph1: 'With years of experience in the IT industry, I specialize in providing comprehensive technical solutions for businesses and individuals in Marrakech. My approach combines technical expertise with excellent customer service.',
+    aboutParagraph2: 'Whether you need computer repair, network setup, security camera installation, or ongoing IT support, I\'m committed to delivering reliable solutions that keep your technology running smoothly.',
+    expertiseAreas: 'Expertise Areas:',
+    hardwareDiagnostics: 'Hardware Diagnostics & Repair',
+    networkConfig: 'Network Configuration & Security',
+    cloudSolutions: 'Cloud Solutions & Data Backup',
+    securityInstallation: 'Security System Installation',
+    happyClients: 'Happy Clients',
+    yearsExperience: 'Years Experience',
+    supportAvailable: 'Support Available',
+    responseTime: 'Response Time',
+    
+    // Hero Section
+    professionalSolutions: 'Professional IT Solutions in Marrakech',
+    fastResponse: 'Fast Response',
+    professionalService: 'Professional Service',
+    transparentPricing: 'Transparent Pricing',
+    
+    // Why Choose Preview
+    whyChooseCommitment: 'Our commitment to excellence and customer satisfaction makes us the trusted choice for IT support in Marrakech. We combine technical expertise with personalized service to deliver solutions that work for your specific needs.',
+    viewAllServices: 'View All Services',
   },
   fr: {
     // Navigation
@@ -183,6 +228,51 @@ const translations = {
     experienceDesc: 'Des années d\'expérience au service des entreprises et particuliers de la région de Marrakech.',
     testimonialQuote: '"La différence est dans les détails - service professionnel, communication transparente et véritable attention à nos besoins technologiques. Hautement recommandé pour toute entreprise à Marrakech."',
     testimonialAuthor: '- Client Entreprise Satisfait',
+    
+    // Contact Page
+    sendMessageTitle: 'Envoyez-nous un message',
+    yourFullName: 'Votre nom complet',
+    yourEmail: 'votre.email@exemple.com',
+    yourPhone: '+212 6XX XXX XXX',
+    describeNeeds: 'Décrivez vos besoins en support informatique ou vos questions...',
+    contactInfo: 'Informations de Contact',
+    phoneLabel: 'Téléphone',
+    available247: 'Disponible 24/7',
+    emailLabel: 'Email',
+    replyWithin24: 'Nous répondons sous 24 heures',
+    locationLabel: 'Localisation',
+    marrakechMorocco: 'Marrakech, Maroc',
+    onsiteAvailable: 'Services sur site disponibles',
+    quickWhatsApp: 'Support WhatsApp Rapide',
+    instantSupport: 'Obtenez un support instantané via WhatsApp. Parfait pour les problèmes techniques urgents.',
+    businessHours: 'Heures d\'Ouverture',
+    availability: 'Disponibilité',
+    availableRoundClock: 'Nous sommes disponibles 24h/24 pour soutenir vos besoins informatiques, y compris les services d\'urgence.',
+    
+    // About Page
+    profilePhotoPlaceholder: 'Espace réservé pour photo de profil ou logo d\'entreprise',
+    professionalExpert: 'Expert en Support Informatique Professionnel',
+    aboutParagraph1: 'Avec des années d\'expérience dans l\'industrie informatique, je me spécialise dans la fourniture de solutions techniques complètes pour les entreprises et les particuliers à Marrakech. Mon approche combine l\'expertise technique avec un excellent service client.',
+    aboutParagraph2: 'Que vous ayez besoin de réparation d\'ordinateur, d\'installation de réseau, d\'installation de caméras de sécurité ou de support informatique continu, je m\'engage à fournir des solutions fiables qui maintiennent votre technologie en bon état de fonctionnement.',
+    expertiseAreas: 'Domaines d\'Expertise :',
+    hardwareDiagnostics: 'Diagnostic et Réparation Matériel',
+    networkConfig: 'Configuration et Sécurité Réseau',
+    cloudSolutions: 'Solutions Cloud et Sauvegarde de Données',
+    securityInstallation: 'Installation de Systèmes de Sécurité',
+    happyClients: 'Clients Satisfaits',
+    yearsExperience: 'Années d\'Expérience',
+    supportAvailable: 'Support Disponible',
+    responseTime: 'Temps de Réponse',
+    
+    // Hero Section
+    professionalSolutions: 'Solutions Informatiques Professionnelles à Marrakech',
+    fastResponse: 'Intervention Rapide',
+    professionalService: 'Service Professionnel',
+    transparentPricing: 'Tarification Transparente',
+    
+    // Why Choose Preview
+    whyChooseCommitment: 'Notre engagement envers l\'excellence et la satisfaction client fait de nous le choix de confiance pour le support informatique à Marrakech. Nous combinons expertise technique et service personnalisé pour fournir des solutions adaptées à vos besoins spécifiques.',
+    viewAllServices: 'Voir Tous les Services',
   }
 };
 

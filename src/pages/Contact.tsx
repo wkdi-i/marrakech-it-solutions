@@ -56,7 +56,7 @@ const Contact = () => {
               {/* Contact Form */}
               <div className="card-professional p-8">
                 <h2 className="font-inter font-bold text-2xl text-primary mb-6">
-                  Send us a Message
+                  {t('sendMessageTitle')}
                 </h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -71,7 +71,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="font-inter"
-                      placeholder="Your full name"
+                      placeholder={t('yourFullName')}
                     />
                   </div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       className="font-inter"
-                      placeholder="your.email@example.com"
+                      placeholder={t('yourEmail')}
                     />
                   </div>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="font-inter"
-                      placeholder="+212 6XX XXX XXX"
+                      placeholder={t('yourPhone')}
                     />
                   </div>
 
@@ -115,7 +115,7 @@ const Contact = () => {
                       required
                       rows={5}
                       className="font-inter resize-none"
-                      placeholder="Describe your IT support needs or questions..."
+                      placeholder={t('describeNeeds')}
                     />
                   </div>
 
@@ -135,34 +135,34 @@ const Contact = () => {
                 {/* Quick Contact */}
                 <div className="card-professional p-8">
                   <h2 className="font-inter font-bold text-2xl text-primary mb-6">
-                    Contact Information
+                    {t('contactInfo')}
                   </h2>
                   
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
                       <Phone className="w-6 h-6 text-secondary-blue flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-inter font-semibold text-primary">Phone</h3>
+                        <h3 className="font-inter font-semibold text-primary">{t('phoneLabel')}</h3>
                         <p className="font-inter text-muted-foreground">+212600808474</p>
-                        <p className="font-inter text-sm text-muted-foreground">Available 24/7</p>
+                        <p className="font-inter text-sm text-muted-foreground">{t('available247')}</p>
                       </div>
                     </div>
 
                     <div className="flex items-start space-x-4">
                       <Mail className="w-6 h-6 text-secondary-blue flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-inter font-semibold text-primary">Email</h3>
+                        <h3 className="font-inter font-semibold text-primary">{t('emailLabel')}</h3>
                         <p className="font-inter text-muted-foreground">contact@itsupport-marrakech.com</p>
-                        <p className="font-inter text-sm text-muted-foreground">We reply within 24 hours</p>
+                        <p className="font-inter text-sm text-muted-foreground">{t('replyWithin24')}</p>
                       </div>
                     </div>
 
                     <div className="flex items-start space-x-4">
                       <MapPin className="w-6 h-6 text-secondary-blue flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="font-inter font-semibold text-primary">Location</h3>
-                        <p className="font-inter text-muted-foreground">Marrakech, Morocco</p>
-                        <p className="font-inter text-sm text-muted-foreground">On-site services available</p>
+                        <h3 className="font-inter font-semibold text-primary">{t('locationLabel')}</h3>
+                        <p className="font-inter text-muted-foreground">{t('marrakechMorocco')}</p>
+                        <p className="font-inter text-sm text-muted-foreground">{t('onsiteAvailable')}</p>
                       </div>
                     </div>
                   </div>
@@ -173,10 +173,10 @@ const Contact = () => {
                   <div className="text-center">
                     <MessageCircle className="w-12 h-12 text-accent-success mx-auto mb-4" />
                     <h3 className="font-inter font-bold text-xl text-primary mb-2">
-                      Quick WhatsApp Support
+                      {t('quickWhatsApp')}
                     </h3>
                     <p className="font-inter text-muted-foreground mb-6">
-                      Get instant support via WhatsApp. Perfect for urgent technical issues.
+                      {t('instantSupport')}
                     </p>
                     <Button 
                       onClick={handleWhatsApp}
@@ -192,14 +192,14 @@ const Contact = () => {
                 {/* Business Hours */}
                 <div className="card-professional p-8">
                   <h3 className="font-inter font-bold text-xl text-primary mb-4">
-                    Business Hours
+                    {t('businessHours')}
                   </h3>
                   <div className="space-y-2 font-inter text-muted-foreground">
                     <div className="flex justify-between">
-                      <span>Availability</span>
+                      <span>{t('availability')}</span>
                       <span className="text-primary font-semibold">24/7</span>
                     </div>
-                    <p className="text-sm">We're available around the clock to support your IT needs, including emergency services.</p>
+                    <p className="text-sm">{t('availableRoundClock')}</p>
                   </div>
                 </div>
               </div>

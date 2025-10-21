@@ -59,9 +59,7 @@ export const WhyChoosePreview = () => {
         {/* Additional Info */}
         <div className="text-center mt-12 max-w-3xl mx-auto">
           <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-            Our commitment to excellence and customer satisfaction makes us the trusted choice 
-            for IT support in Marrakech. We combine technical expertise with personalized service 
-            to deliver solutions that work for your specific needs.
+            {t('whyChooseCommitment')}
           </p>
         </div>
       </div>

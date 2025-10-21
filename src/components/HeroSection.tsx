@@ -22,7 +22,7 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6 animate-fade-up">
             <CheckCircle className="w-4 h-4 mr-2 text-accent-success" />
-            <span className="font-inter font-medium text-sm">Professional IT Solutions in Marrakech</span>
+            <span className="font-inter font-medium text-sm">{t('professionalSolutions')}</span>
           </div>
 
           {/* Main Heading */}
@@ -59,15 +59,15 @@ export const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-8 mt-12 text-sm font-inter text-primary-foreground/70 animate-fade-up">
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-accent-success" />
-              Fast Response
+              {t('fastResponse')}
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-accent-success" />
-              Professional Service
+              {t('professionalService')}
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-accent-success" />
-              Transparent Pricing
+              {t('transparentPricing')}
             </div>
           </div>
         </div>

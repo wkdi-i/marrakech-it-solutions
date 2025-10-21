@@ -5,10 +5,10 @@ const About = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: Users, value: '100+', label: 'Happy Clients' },
-    { icon: Award, value: '5+', label: 'Years Experience' },
-    { icon: CheckCircle, value: '24/7', label: 'Support Available' },
-    { icon: Clock, value: '<2h', label: 'Response Time' },
+    { icon: Users, value: '100+', labelKey: 'happyClients' },
+    { icon: Award, value: '5+', labelKey: 'yearsExperience' },
+    { icon: CheckCircle, value: '24/7', labelKey: 'supportAvailable' },
+    { icon: Clock, value: '<2h', labelKey: 'responseTime' },
   ];
 
   return (
@@ -41,45 +41,41 @@ const About = () => {
                   </div>
                 </div>
                 <p className="font-inter text-sm text-muted-foreground italic">
-                  Space reserved for profile photo or company logo
+                  {t('profilePhotoPlaceholder')}
                 </p>
               </div>
 
               {/* Content */}
               <div className="space-y-6">
                 <h2 className="font-inter font-bold text-3xl text-primary mb-4">
-                  Professional IT Support Expert
+                  {t('professionalExpert')}
                 </h2>
                 <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-                  With years of experience in the IT industry, I specialize in providing comprehensive 
-                  technical solutions for businesses and individuals in Marrakech. My approach combines 
-                  technical expertise with excellent customer service.
+                  {t('aboutParagraph1')}
                 </p>
                 <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-                  Whether you need computer repair, network setup, security camera installation, 
-                  or ongoing IT support, I'm committed to delivering reliable solutions that keep 
-                  your technology running smoothly.
+                  {t('aboutParagraph2')}
                 </p>
 
                 {/* Certifications/Skills */}
                 <div className="space-y-3">
-                  <h3 className="font-inter font-semibold text-xl text-primary">Expertise Areas:</h3>
+                  <h3 className="font-inter font-semibold text-xl text-primary">{t('expertiseAreas')}</h3>
                   <ul className="space-y-2">
                     <li className="flex items-center font-inter text-muted-foreground">
                       <CheckCircle className="w-5 h-5 text-accent-success mr-3" />
-                      Hardware Diagnostics & Repair
+                      {t('hardwareDiagnostics')}
                     </li>
                     <li className="flex items-center font-inter text-muted-foreground">
                       <CheckCircle className="w-5 h-5 text-accent-success mr-3" />
-                      Network Configuration & Security
+                      {t('networkConfig')}
                     </li>
                     <li className="flex items-center font-inter text-muted-foreground">
                       <CheckCircle className="w-5 h-5 text-accent-success mr-3" />
-                      Cloud Solutions & Data Backup
+                      {t('cloudSolutions')}
                     </li>
                     <li className="flex items-center font-inter text-muted-foreground">
                       <CheckCircle className="w-5 h-5 text-accent-success mr-3" />
-                      Security System Installation
+                      {t('securityInstallation')}
                     </li>
                   </ul>
                 </div>
@@ -102,7 +98,7 @@ const About = () => {
                     {stat.value}
                   </div>
                   <div className="font-inter text-primary-foreground/80">
-                    {stat.label}
+                    {t(stat.labelKey)}
                   </div>
                 </div>
               );

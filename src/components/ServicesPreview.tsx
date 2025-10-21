@@ -64,7 +64,7 @@ export const ServicesPreview = () => {
         <div className="text-center">
           <Link to="/services">
             <Button size="lg" className="btn-hero font-inter font-semibold group">
-              View All Services
+              {t('viewAllServices')}
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
