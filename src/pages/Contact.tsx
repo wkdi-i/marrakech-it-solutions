@@ -152,7 +152,7 @@ const Contact = () => {
                       <Mail className="w-6 h-6 text-secondary-blue flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-inter font-semibold text-primary">{t('emailLabel')}</h3>
-                        <p className="font-inter text-muted-foreground">contact@itsupport-marrakech.com</p>
+                        <p className="font-inter text-muted-foreground">contact@sahatech.ma</p>
                         <p className="font-inter text-sm text-muted-foreground">{t('replyWithin24')}</p>
                       </div>
                     </div>

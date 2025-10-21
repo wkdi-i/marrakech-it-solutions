@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ThemeToggle } from './ThemeToggle';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,9 +54,8 @@ export const Header = () => {
             ))}
           </nav>
 
-          {/* Theme Toggle, Language Switcher & Mobile Menu */}
+          {/* Language Switcher & Mobile Menu */}
           <div className="flex items-center space-x-2">
-            <ThemeToggle />
             <Button
               variant="outline"
               size="sm"

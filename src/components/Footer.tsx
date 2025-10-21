@@ -29,8 +29,8 @@ export const Footer = () => {
                 <span className="font-inter">+212600808474</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-secondary-blue" />
-                <span className="font-inter">contact@itsupport-marrakech.com</span>
+              <Mail className="w-5 h-5 text-secondary-blue" />
+                <span className="font-inter">contact@sahatech.ma</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-secondary-blue" />
