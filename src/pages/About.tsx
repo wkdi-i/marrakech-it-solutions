@@ -33,16 +33,15 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Profile Image Placeholder */}
+              {/* Company Logo */}
               <div className="text-center lg:text-left">
-                <div className="w-64 h-64 mx-auto lg:mx-0 bg-gradient-to-br from-primary to-secondary-blue rounded-2xl flex items-center justify-center mb-6 shadow-strong">
-                  <div className="w-48 h-48 bg-white/20 rounded-xl flex items-center justify-center">
-                    <Users className="w-24 h-24 text-primary-foreground" />
-                  </div>
+                <div className="w-64 h-64 mx-auto lg:mx-0 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-strong p-8">
+                  <img 
+                    src={new URL('../assets/saha-logo-full.jpg', import.meta.url).href} 
+                    alt="SAHA Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <p className="font-inter text-sm text-muted-foreground italic">
-                  {t('profilePhotoPlaceholder')}
-                </p>
               </div>
 
               {/* Content */}
