@@ -11,9 +11,9 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src={new URL('../assets/sahia-logo.png', import.meta.url).href} 
-              alt="SAHIA IT Support" 
-              className="h-12 w-auto"
+              src={new URL('../assets/saha-logo.jpg', import.meta.url).href} 
+              alt="SAHA" 
+              className="h-14 w-auto object-contain"
             />
             <p className="font-inter text-primary-foreground/80 leading-relaxed">
               {t('footerText')}
@@ -46,14 +46,13 @@ export const Footer = () => {
               <li>• {t('service1Title')}</li>
               <li>• {t('service2Title')}</li>
               <li>• {t('service3Title')}</li>
-              <li>• {t('service5Title')}</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-light/20 mt-8 pt-8">
           <div className="text-center font-inter text-primary-foreground/60">
-            <p>&copy; 2024 IT Support Marrakech. All rights reserved.</p>
+            <p>&copy; 2024 SAHA</p>
           </div>
         </div>
       </div>

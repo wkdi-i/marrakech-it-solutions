@@ -58,7 +58,7 @@ const translations = {
     whatsapp: 'WhatsApp',
     
     // Footer
-    footerText: 'Professional IT Support Services in Marrakech',
+    footerText: 'Surveillance systems | Computer networks | Technical & office support',
     
     // Services Page Details
     servicesHeroDesc: 'Comprehensive IT solutions designed to meet your technology needs and keep your business running smoothly.',
@@ -134,8 +134,7 @@ const translations = {
     
     // Hero Section
     professionalSolutions: 'Professional IT Solutions in Marrakech',
-    fastResponse: 'Fast Response',
-    professionalService: 'Professional Service',
+    professionalService: '7/7 Availability',
     transparentPricing: 'Transparent Pricing',
     
     // Why Choose Preview
@@ -188,7 +187,7 @@ const translations = {
     whatsapp: 'WhatsApp',
     
     // Footer
-    footerText: 'Services de Support Informatique Professionnel à Marrakech',
+    footerText: 'Systèmes de surveillance | Réseaux informatiques | Support technique & bureautique',
     
     // Services Page Details
     servicesHeroDesc: 'Solutions informatiques complètes conçues pour répondre à vos besoins technologiques et assurer le bon fonctionnement de votre entreprise.',
@@ -264,8 +263,7 @@ const translations = {
     
     // Hero Section
     professionalSolutions: 'Solutions Informatiques Professionnelles à Marrakech',
-    fastResponse: 'Intervention Rapide',
-    professionalService: 'Service Professionnel',
+    professionalService: 'Disponibilité 7/7',
     transparentPricing: 'Tarification Transparente',
     
     // Why Choose Preview

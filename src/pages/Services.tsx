@@ -10,7 +10,7 @@ const Services = () => {
       icon: Camera,
       titleKey: 'service1Title',
       descKey: 'service1Desc',
-      features: ['service1Feature1', 'service1Feature2', 'service1Feature3', 'service1Feature4'],
+      features: ['service1Feature1', 'service1Feature2', 'service1Feature3'],
     },
     {
       icon: Network,

@@ -28,13 +28,10 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src={new URL('../assets/sahia-logo.png', import.meta.url).href} 
-              alt="SAHATECH" 
-              className="h-10 w-auto"
+              src={new URL('../assets/saha-logo.jpg', import.meta.url).href} 
+              alt="SAHA" 
+              className="h-12 w-auto object-contain"
             />
-            <span className="font-inter font-semibold text-primary text-xl">
-              SAHATECH
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -67,10 +67,6 @@ export const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-8 mt-12 text-sm font-inter text-primary-foreground/70 animate-fade-up">
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2 text-accent-success" />
-              {t('fastResponse')}
-            </div>
-            <div className="flex items-center">
-              <CheckCircle className="w-4 h-4 mr-2 text-accent-success" />
               {t('professionalService')}
             </div>
             <div className="flex items-center">
