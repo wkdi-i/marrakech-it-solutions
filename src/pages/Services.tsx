@@ -1,4 +1,4 @@
-import { Computer, Network, Camera, Headphones, CheckCircle } from 'lucide-react';
+import { Camera, Network, Phone, Headphones, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -7,7 +7,7 @@ const Services = () => {
 
   const services = [
     {
-      icon: Computer,
+      icon: Camera,
       titleKey: 'service1Title',
       descKey: 'service1Desc',
       features: ['service1Feature1', 'service1Feature2', 'service1Feature3', 'service1Feature4'],
@@ -19,16 +19,16 @@ const Services = () => {
       features: ['service2Feature1', 'service2Feature2', 'service2Feature3', 'service2Feature4'],
     },
     {
-      icon: Camera,
+      icon: Phone,
       titleKey: 'service3Title',
       descKey: 'service3Desc',
       features: ['service3Feature1', 'service3Feature2', 'service3Feature3', 'service3Feature4'],
     },
     {
       icon: Headphones,
-      titleKey: 'service5Title',
-      descKey: 'service5Desc',
-      features: ['service5Feature1', 'service5Feature2', 'service5Feature3', 'service5Feature4'],
+      titleKey: 'service4Title',
+      descKey: 'service4Desc',
+      features: ['service4Feature1', 'service4Feature2', 'service4Feature3', 'service4Feature4'],
     },
   ];
 

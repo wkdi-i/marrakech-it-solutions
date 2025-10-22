@@ -28,7 +28,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-inter font-bold text-4xl md:text-6xl leading-tight mb-6 animate-fade-up">
+          <h1 className="font-inter font-bold text-4xl md:text-6xl leading-tight mb-6 animate-fade-up whitespace-pre-line">
             {t('heroTitle')}
           </h1>
 
