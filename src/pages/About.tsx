@@ -8,7 +8,6 @@ const About = () => {
     { icon: Users, value: '100+', labelKey: 'happyClients' },
     { icon: Award, value: '5+', labelKey: 'yearsExperience' },
     { icon: CheckCircle, value: '24/7', labelKey: 'supportAvailable' },
-    { icon: Clock, value: '<2h', labelKey: 'responseTime' },
   ];
 
   return (

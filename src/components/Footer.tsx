@@ -50,11 +50,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-light/20 mt-8 pt-8">
-          <div className="text-center font-inter text-primary-foreground/60">
-            <p>&copy; 2024 SAHA</p>
-          </div>
-        </div>
       </div>
     </footer>
   );
