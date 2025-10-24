@@ -235,7 +235,7 @@ const translations = {
     describeNeeds: 'Décrivez vos besoins en support informatique ou vos questions...',
     contactInfo: 'Informations de Contact',
     phoneLabel: 'Téléphone',
-    available247: 'Disponible 24/7',
+    available247: 'Disponible 7/7',
     emailLabel: 'Email',
     replyWithin24: 'Nous répondons sous 24 heures',
     locationLabel: 'Localisation',
@@ -244,7 +244,7 @@ const translations = {
     instantSupport: 'Obtenez un support instantané via WhatsApp. Parfait pour les problèmes techniques urgents.',
     businessHours: 'Heures d\'Ouverture',
     availability: 'Disponibilité',
-    availableRoundClock: 'Nous sommes disponibles 24h/24 pour soutenir vos besoins informatiques, y compris les services d\'urgence.',
+    availableRoundClock: 'Nous sommes disponibles 7/7 pour soutenir vos besoins informatiques, y compris les services d\'urgence.',
     
     // About Page
     profilePhotoPlaceholder: 'Espace réservé pour photo de profil ou logo d\'entreprise',
