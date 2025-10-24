@@ -97,7 +97,11 @@ const Services = () => {
             <p className="font-inter text-muted-foreground mb-6 max-w-2xl mx-auto">
               {t('customSolutionsDesc')}
             </p>
-            <Button size="lg" className="btn-hero font-inter font-semibold">
+            <Button 
+              size="lg" 
+              className="btn-hero font-inter font-semibold"
+              onClick={() => window.open('https://wa.me/212600808474', '_blank')}
+            >
               {t('requestSupport')}
             </Button>
           </div>
