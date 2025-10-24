@@ -197,7 +197,7 @@ const Contact = () => {
                   <div className="space-y-2 font-inter text-muted-foreground">
                     <div className="flex justify-between">
                       <span>{t('availability')}</span>
-                      <span className="text-primary font-semibold">24/7</span>
+                      <span className="text-primary font-semibold">7/7</span>
                     </div>
                     <p className="text-sm">{t('availableRoundClock')}</p>
                   </div>

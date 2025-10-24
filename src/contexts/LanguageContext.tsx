@@ -106,7 +106,7 @@ const translations = {
     describeNeeds: 'Describe your IT support needs or questions...',
     contactInfo: 'Contact Information',
     phoneLabel: 'Phone',
-    available247: 'Available 24/7',
+    available247: 'Available 7/7',
     emailLabel: 'Email',
     replyWithin24: 'We reply within 24 hours',
     locationLabel: 'Location',
