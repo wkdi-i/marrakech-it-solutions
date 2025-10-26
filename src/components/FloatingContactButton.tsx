@@ -1,106 +1,75 @@
 import { useState } from 'react';
-import { MessageCircle, Phone, Mail, Instagram, X } from 'lucide-react';
-import { Dialog, DialogContent, DialogClose } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
+import { MessageCircle, Phone, Mail, Instagram } from 'lucide-react';
 
 export const FloatingContactButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const contactInfo = [
+  const contactButtons = [
     {
       icon: Phone,
       label: 'Téléphone',
-      value: '+212 6 12 34 56 78',
-      href: 'tel:+212612345678',
-      color: 'text-accent-blue',
+      href: 'tel:+212600808474',
+      bgColor: 'bg-accent-blue',
+      hoverColor: 'hover:bg-accent-blue/90',
     },
     {
       icon: MessageCircle,
       label: 'WhatsApp',
-      value: '+212 6 12 34 56 78',
-      href: 'https://wa.me/212612345678',
-      color: 'text-accent-success',
+      href: 'https://wa.me/212600808474',
+      bgColor: 'bg-accent-success',
+      hoverColor: 'hover:bg-accent-success/90',
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'contact@sahatech.ma',
       href: 'mailto:contact@sahatech.ma',
-      color: 'text-accent-purple',
+      bgColor: 'bg-accent-purple',
+      hoverColor: 'hover:bg-accent-purple/90',
     },
     {
       icon: Instagram,
       label: 'Instagram',
-      value: '@sahatech1',
-      href: 'https://instagram.com/sahatech1',
-      color: 'text-accent-pink',
+      href: 'https://www.instagram.com/sahatech1',
+      bgColor: 'bg-accent-pink',
+      hoverColor: 'hover:bg-accent-pink/90',
+      target: '_blank',
     },
   ];
 
   return (
-    <>
-      {/* Floating Button */}
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col-reverse items-end gap-3">
+      {/* Expanded Action Buttons */}
+      {isExpanded && (
+        <>
+          {contactButtons.map((contact, index) => (
+            <a
+              key={index}
+              href={contact.href}
+              target={contact.target}
+              rel={contact.target ? 'noopener noreferrer' : undefined}
+              className={`h-12 w-12 rounded-full ${contact.bgColor} ${contact.hoverColor} shadow-strong transition-all duration-300 hover:scale-110 hover:shadow-elegant flex items-center justify-center group animate-scale-in`}
+              style={{
+                animationDelay: `${index * 50}ms`,
+              }}
+              aria-label={contact.label}
+            >
+              <contact.icon className="h-5 w-5 text-white" />
+            </a>
+          ))}
+        </>
+      )}
+
+      {/* Main Toggle Button */}
       <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-gradient-to-br from-accent-blue to-secondary-blue shadow-strong hover:shadow-blue transition-all duration-300 hover:scale-110 flex items-center justify-center group"
+        onClick={() => setIsExpanded(!isExpanded)}
+        className={`h-14 w-14 rounded-full bg-gradient-to-br from-accent-blue to-secondary-blue shadow-strong hover:shadow-blue transition-all duration-300 hover:scale-110 flex items-center justify-center group ${
+          isExpanded ? 'rotate-45' : ''
+        }`}
         aria-label="Contactez-nous"
+        aria-expanded={isExpanded}
       >
         <MessageCircle className="h-6 w-6 text-white group-hover:rotate-12 transition-transform duration-300" />
       </button>
-
-      {/* Contact Dialog */}
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-md animate-scale-in">
-          <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-            <X className="h-4 w-4" />
-            <span className="sr-only">Close</span>
-          </DialogClose>
-
-          <div className="space-y-6 pt-6">
-            {/* Header */}
-            <div className="text-center">
-              <h2 className="text-2xl font-bold text-foreground mb-2">
-                Contactez-nous
-              </h2>
-              <p className="text-sm text-muted-foreground">
-                Nous sommes là pour vous aider
-              </p>
-            </div>
-
-            {/* Contact Info List */}
-            <div className="space-y-3">
-              {contactInfo.map((contact, index) => (
-                <a
-                  key={index}
-                  href={contact.href}
-                  target={contact.label === 'Instagram' ? '_blank' : undefined}
-                  rel={contact.label === 'Instagram' ? 'noopener noreferrer' : undefined}
-                  className="flex items-center gap-4 p-4 rounded-lg bg-secondary hover:bg-accent transition-colors duration-200 group"
-                >
-                  <div className={`${contact.color} p-2 rounded-full bg-background`}>
-                    <contact.icon className="h-5 w-5" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-muted-foreground">
-                      {contact.label}
-                    </p>
-                    <p className="text-sm font-semibold text-foreground truncate group-hover:text-accent-blue transition-colors">
-                      {contact.value}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
-
-            {/* Footer Note */}
-            <div className="text-center pt-4 border-t border-border">
-              <p className="text-xs text-muted-foreground">
-                Disponibilité 7/7 pour vos besoins informatiques
-              </p>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
-    </>
+    </div>
   );
 };
