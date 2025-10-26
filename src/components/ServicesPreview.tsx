@@ -30,14 +30,18 @@ export const ServicesPreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-subtle-gradient">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-subtle-gradient relative overflow-hidden">
+      {/* Neon glow background */}
+      <div className="absolute top-1/2 left-0 w-96 h-96 rounded-full opacity-10 blur-3xl bg-gradient-to-br from-primary to-accent-blue"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full opacity-10 blur-3xl bg-gradient-to-br from-secondary to-accent-purple"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-inter font-bold text-3xl md:text-4xl text-primary mb-4">
+          <h2 className="font-inter font-bold text-3xl md:text-4xl bg-gradient-to-r from-primary via-accent-blue to-primary bg-clip-text text-transparent mb-4">
             {t('servicesTitle')}
           </h2>
-          <div className="w-24 h-1 bg-secondary-blue mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent-blue mx-auto rounded-full shadow-cyan"></div>
         </div>
 
         {/* Services Grid */}
@@ -46,10 +50,10 @@ export const ServicesPreview = () => {
             const Icon = service.icon;
             return (
               <div key={index} className="card-service group">
-                <div className="tech-icon mb-4 group-hover:scale-110">
-                  <Icon className="w-6 h-6" />
+                <div className="tech-icon mb-4 group-hover:scale-110 group-hover:shadow-cyan">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-inter font-semibold text-lg text-primary mb-3">
+                <h3 className="font-inter font-semibold text-lg text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(service.titleKey)}
                 </h3>
                 <p className="font-inter text-muted-foreground leading-relaxed">

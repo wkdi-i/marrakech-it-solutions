@@ -70,12 +70,17 @@ export default {
         medium: "var(--shadow-medium)",
         strong: "var(--shadow-strong)",
         blue: "var(--shadow-blue)",
+        cyan: "var(--shadow-cyan)",
+        purple: "var(--shadow-purple)",
+        pink: "var(--shadow-pink)",
       },
       backgroundImage: {
         "hero-gradient": "var(--gradient-hero)",
         "primary-gradient": "var(--gradient-primary)",
         "blue-gradient": "var(--gradient-blue)",
+        "purple-gradient": "var(--gradient-purple)",
         "subtle-gradient": "var(--gradient-subtle)",
+        "glow-gradient": "var(--gradient-glow)",
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",
