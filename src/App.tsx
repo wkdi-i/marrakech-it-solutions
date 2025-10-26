@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { FloatingContactButton } from "./components/FloatingContactButton";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -36,6 +37,7 @@ const App = () => (
               </Routes>
             </main>
             <Footer />
+            <FloatingContactButton />
           </div>
         </BrowserRouter>
       </LanguageProvider>
