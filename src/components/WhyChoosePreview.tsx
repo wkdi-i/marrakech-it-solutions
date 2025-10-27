@@ -28,17 +28,14 @@ export const WhyChoosePreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
-      {/* Neon glow background */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full opacity-10 blur-3xl bg-gradient-to-br from-secondary to-accent-pink"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-inter font-bold text-3xl md:text-4xl bg-gradient-to-r from-secondary via-accent-purple to-accent-pink bg-clip-text text-transparent mb-4">
+          <h2 className="font-inter font-bold text-3xl md:text-4xl text-primary mb-4">
             {t('whyTitle')}
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-secondary to-accent-purple mx-auto rounded-full shadow-purple"></div>
+          <div className="w-24 h-1 bg-secondary-blue mx-auto rounded-full"></div>
         </div>
 
         {/* Benefits Grid */}
@@ -47,11 +44,11 @@ export const WhyChoosePreview = () => {
             const Icon = benefit.icon;
             return (
               <div key={index} className="text-center group">
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-card/50 backdrop-blur-xl border border-primary/20 flex items-center justify-center group-hover:scale-110 group-hover:shadow-cyan group-hover:border-primary/50 transition-all duration-300`}>
-                  <Icon className={`w-8 h-8 ${benefit.color} drop-shadow-[0_0_10px_currentColor]`} />
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className={`w-8 h-8 ${benefit.color}`} />
                 </div>
-                <h3 className="font-inter font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition-colors">
-                  <CheckCircle className="w-5 h-5 inline mr-2 text-accent-success drop-shadow-[0_0_10px_currentColor]" />
+                <h3 className="font-inter font-semibold text-lg text-primary mb-2">
+                  <CheckCircle className="w-5 h-5 inline mr-2 text-accent-success" />
                   {t(benefit.titleKey)}
                 </h3>
               </div>

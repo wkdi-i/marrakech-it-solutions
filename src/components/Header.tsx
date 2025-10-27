@@ -22,15 +22,15 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-card/30 backdrop-blur-xl border-b border-primary/20 sticky top-0 z-50 shadow-strong">
+    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/" className="flex items-center space-x-3">
             <img 
               src={new URL('../assets/saha-logo.jpg', import.meta.url).href} 
               alt="SAHA" 
-              className="h-12 w-auto object-contain transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]"
+              className="h-12 w-auto object-contain"
             />
           </Link>
 
@@ -40,16 +40,13 @@ export const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`font-inter font-medium transition-all duration-300 relative group ${
+                className={`font-inter font-medium transition-colors hover:text-secondary-blue ${
                   location.pathname === item.path 
-                    ? 'text-primary drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]' 
-                    : 'text-muted-foreground hover:text-primary'
+                    ? 'text-secondary-blue' 
+                    : 'text-muted-foreground'
                 }`}
               >
                 {t(item.key)}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-primary to-accent-blue transition-all duration-300 ${
-                  location.pathname === item.path ? 'w-full shadow-cyan' : 'w-0 group-hover:w-full'
-                }`}></span>
               </Link>
             ))}
           </nav>
@@ -60,7 +57,7 @@ export const Header = () => {
               variant="outline"
               size="sm"
               onClick={toggleLanguage}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 border-muted-dark hover:border-secondary-blue"
             >
               <Globe className="w-4 h-4" />
               <span className="font-inter font-medium">{language.toUpperCase()}</span>
@@ -70,7 +67,7 @@ export const Header = () => {
             <Button
               variant="outline"
               size="sm"
-              className="md:hidden"
+              className="md:hidden border-muted-dark"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -80,16 +77,16 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-primary/20 bg-card/50 backdrop-blur-xl">
+          <div className="md:hidden border-t border-border">
             <nav className="py-4 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`block py-2 px-4 font-inter font-medium rounded-full transition-all duration-300 ${
+                  className={`block py-2 px-4 font-inter font-medium rounded-lg transition-colors ${
                     location.pathname === item.path 
-                      ? 'text-primary bg-primary/10 shadow-cyan' 
-                      : 'text-muted-foreground hover:text-primary hover:bg-primary/5'
+                      ? 'text-secondary-blue bg-secondary-blue-light' 
+                      : 'text-muted-foreground hover:text-secondary-blue hover:bg-secondary'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -8,123 +8,147 @@
 
 @layer base {
   :root {
-    /* Dark neon theme - Base colors */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* SAHIA Logo Color Palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 25%;
 
-    /* Card colors */
-    --card: 240 10% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 25%;
 
-    /* Primary neon cyan */
-    --primary: 189 97% 60%;
-    --primary-foreground: 240 10% 3.9%;
-    --primary-light: 189 97% 70%;
-    --primary-lighter: 189 97% 80%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 25%;
 
-    /* Secondary neon purple */
-    --secondary: 280 70% 55%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-blue: 220 90% 60%;
-    --secondary-blue-light: 220 90% 70%;
+    /* Dark Gray Primary (from SAHIA text) */
+    --primary: 0 0% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 0 0% 35%;
+    --primary-lighter: 0 0% 85%;
 
-    /* Muted dark */
-    --muted: 240 5% 15%;
-    --muted-foreground: 240 5% 65%;
-    --muted-dark: 240 8% 10%;
+    /* Cyan Blue Secondary (from logo) */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 0 0% 25%;
+    --secondary-blue: 195 100% 50%;
+    --secondary-blue-light: 195 100% 90%;
 
-    /* Accent neon colors */
-    --accent: 300 80% 60%;
-    --accent-foreground: 0 0% 98%;
-    --accent-blue: 220 90% 60%;
-    --accent-purple: 280 70% 55%;
-    --accent-pink: 330 80% 60%;
-    --accent-success: 150 80% 50%;
+    /* Professional Grays */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --muted-dark: 0 0% 85%;
 
-    /* Destructive */
-    --destructive: 0 84.2% 60.2%;
+    /* Accent Colors from SAHIA Logo */
+    --accent: 210 40% 96%;
+    --accent-foreground: 0 0% 25%;
+    --accent-blue: 195 100% 50%;
+    --accent-purple: 265 85% 55%;
+    --accent-pink: 340 90% 60%;
+    --accent-success: 120 60% 45%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Popover */
-    --popover: 240 10% 8%;
-    --popover-foreground: 0 0% 98%;
+    --border: 220 15% 88%;
+    --input: 220 15% 95%;
+    --ring: 220 85% 15%;
 
-    /* Border & Input */
-    --border: 240 10% 18%;
-    --input: 240 10% 18%;
-    --ring: 189 97% 60%;
+    --radius: 0.75rem;
 
-    /* Radius */
-    --radius: 1rem;
-
-    /* Neon glow shadows */
-    --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.5);
-    --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.6);
-    --shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.7);
-    --shadow-blue: 0 0 30px rgba(59, 184, 255, 0.5), 0 0 60px rgba(59, 184, 255, 0.2);
-    --shadow-cyan: 0 0 30px rgba(34, 211, 238, 0.6), 0 0 60px rgba(34, 211, 238, 0.3);
-    --shadow-purple: 0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(168, 85, 247, 0.3);
-    --shadow-pink: 0 0 30px rgba(236, 72, 153, 0.6), 0 0 60px rgba(236, 72, 153, 0.3);
-
-    /* Neon gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(189, 97%, 60%) 0%, hsl(280, 70%, 55%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(189, 97%, 60%) 0%, hsl(220, 90%, 60%) 100%);
-    --gradient-blue: linear-gradient(135deg, hsl(220, 90%, 60%) 0%, hsl(189, 97%, 60%) 100%);
-    --gradient-purple: linear-gradient(135deg, hsl(280, 70%, 55%) 0%, hsl(330, 80%, 60%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(240, 10%, 8%) 0%, hsl(240, 10%, 5%) 100%);
-    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(189, 97%, 60% / 0.15) 0%, transparent 70%);
-
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* SAHIA Brand Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(265 85% 55%) 0%, hsl(195 100% 50%) 50%, hsl(340 90% 60%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(210 100% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(265 85% 55%) 0%, hsl(195 100% 50%) 50%, hsl(340 90% 60%) 100%);
     
-    --sidebar-background: 240 10% 8%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 189 97% 60%;
-    --sidebar-primary-foreground: 240 10% 3.9%;
-    --sidebar-accent: 240 10% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 240 10% 18%;
-    --sidebar-ring: 189 97% 60%;
+    /* Fluid blob gradients */
+    --gradient-blob-purple: radial-gradient(ellipse 800px 600px at 0% 0%, rgba(168, 85, 247, 0.4) 0%, transparent 50%);
+    --gradient-blob-blue: radial-gradient(ellipse 600px 800px at 100% 20%, rgba(59, 130, 246, 0.35) 0%, transparent 50%);
+    --gradient-blob-pink: radial-gradient(ellipse 700px 700px at 80% 100%, rgba(236, 72, 153, 0.35) 0%, transparent 50%);
+    --gradient-blob-cyan: radial-gradient(ellipse 500px 600px at 50% 50%, rgba(34, 211, 238, 0.25) 0%, transparent 50%);
+
+    /* Professional Shadows */
+    --shadow-soft: 0 4px 16px -4px hsl(0 0% 25% / 0.1);
+    --shadow-medium: 0 8px 32px -8px hsl(0 0% 25% / 0.15);
+    --shadow-strong: 0 16px 64px -16px hsl(0 0% 25% / 0.2);
+    --shadow-blue: 0 8px 32px -8px hsl(195 100% 50% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    /* Same as root for consistent dark theme */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 8%;
-    --card-foreground: 0 0% 98%;
-    --primary: 189 97% 60%;
-    --primary-foreground: 240 10% 3.9%;
-    --primary-light: 189 97% 70%;
-    --primary-lighter: 189 97% 80%;
-    --secondary: 280 70% 55%;
-    --secondary-foreground: 0 0% 98%;
-    --secondary-blue: 220 90% 60%;
-    --secondary-blue-light: 220 90% 70%;
-    --muted: 240 5% 15%;
-    --muted-foreground: 240 5% 65%;
-    --muted-dark: 240 8% 10%;
-    --accent: 300 80% 60%;
-    --accent-foreground: 0 0% 98%;
-    --accent-blue: 220 90% 60%;
-    --accent-purple: 280 70% 55%;
-    --accent-pink: 330 80% 60%;
-    --accent-success: 150 80% 50%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --popover: 240 10% 8%;
-    --popover-foreground: 0 0% 98%;
-    --border: 240 10% 18%;
-    --input: 240 10% 18%;
-    --ring: 189 97% 60%;
-    --sidebar-background: 240 10% 8%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 189 97% 60%;
-    --sidebar-primary-foreground: 240 10% 3.9%;
-    --sidebar-accent: 240 10% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 240 10% 18%;
-    --sidebar-ring: 189 97% 60%;
+    /* Softer dark background - deep charcoal instead of pure black */
+    --background: 220 15% 12%;
+    --foreground: 220 10% 88%;
+
+    /* Cards - slightly lighter than background for depth */
+    --card: 220 15% 15%;
+    --card-foreground: 220 10% 88%;
+
+    --popover: 220 15% 15%;
+    --popover-foreground: 220 10% 88%;
+
+    /* Primary - softer whites instead of pure white */
+    --primary: 220 10% 90%;
+    --primary-foreground: 220 15% 12%;
+    --primary-light: 220 10% 70%;
+    --primary-lighter: 220 10% 30%;
+
+    /* Secondary Blues - muted but still vibrant */
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 220 10% 88%;
+    --secondary-blue: 195 85% 55%;
+    --secondary-blue-light: 195 50% 25%;
+
+    /* Grays for dark mode - warmer, softer tones */
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 65%;
+    --muted-dark: 220 10% 35%;
+
+    /* Accent colors - slightly desaturated for comfort */
+    --accent: 220 15% 18%;
+    --accent-foreground: 220 10% 88%;
+    --accent-blue: 195 75% 58%;
+    --accent-purple: 265 70% 60%;
+    --accent-pink: 340 75% 65%;
+    --accent-success: 120 50% 50%;
+
+    --destructive: 0 75% 58%;
+    --destructive-foreground: 220 10% 95%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 18%;
+    --ring: 195 75% 58%;
+
+    --sidebar-background: 220 15% 14%;
+    --sidebar-foreground: 220 10% 88%;
+    --sidebar-primary: 195 75% 58%;
+    --sidebar-primary-foreground: 220 15% 12%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 220 10% 88%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 195 75% 58%;
+
+    /* Softer shadows for dark mode */
+    --shadow-soft: 0 4px 16px -4px hsl(220 20% 5% / 0.5);
+    --shadow-medium: 0 8px 32px -8px hsl(220 20% 5% / 0.6);
+    --shadow-strong: 0 16px 64px -16px hsl(220 20% 5% / 0.7);
+    --shadow-blue: 0 8px 32px -8px hsl(195 75% 58% / 0.25);
   }
 }
 
@@ -132,79 +156,58 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground font-inter;
-    background-image: 
-      radial-gradient(circle at 20% 30%, hsl(189, 97%, 60% / 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 80% 70%, hsl(280, 70%, 55% / 0.03) 0%, transparent 50%);
   }
 }
 
 @layer components {
-  /* Neon Glow Buttons */
+  /* Professional Button Variants */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-accent-blue text-background px-6 py-3 rounded-full font-semibold shadow-cyan hover:shadow-blue transition-all duration-300 hover:scale-105 relative overflow-hidden;
-  }
-
-  .btn-hero::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-primary/0 via-white/20 to-primary/0 translate-x-[-200%] transition-transform duration-700;
-  }
-
-  .btn-hero:hover::before {
-    @apply translate-x-[200%];
+    @apply bg-gradient-to-r from-primary via-primary-light to-secondary-blue text-primary-foreground;
+    @apply hover:shadow-blue transition-all duration-300 hover:scale-[1.02];
   }
 
   .btn-outline-blue {
-    @apply border-2 border-primary text-primary hover:bg-primary hover:text-background px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-cyan hover:shadow-blue;
+    @apply border-2 border-secondary-blue text-secondary-blue bg-transparent;
+    @apply hover:bg-secondary-blue hover:text-white transition-colors duration-300;
   }
 
-  /* Neon Glow Cards */
+  /* Professional Cards */
   .card-professional {
-    @apply bg-card/50 backdrop-blur-xl border border-primary/20 rounded-3xl shadow-strong hover:shadow-cyan hover:border-primary/40 transition-all duration-300;
+    @apply bg-card border border-border rounded-lg shadow-soft;
+    @apply hover:shadow-medium transition-shadow duration-300;
   }
 
   .card-service {
-    @apply bg-card/50 backdrop-blur-xl border border-primary/20 rounded-3xl p-6 shadow-strong hover:shadow-cyan hover:border-primary/50 hover:-translate-y-2 transition-all duration-300;
+    @apply bg-gradient-to-br from-background to-secondary;
+    @apply border border-border rounded-xl p-6 hover:shadow-medium;
+    @apply transition-all duration-300 hover:-translate-y-1;
   }
 
-  /* Gradient Backgrounds */
+  /* Professional Gradients */
   .bg-hero-gradient {
-    @apply bg-gradient-to-br from-background via-muted-dark to-background;
+    background: var(--gradient-hero);
   }
 
   .bg-subtle-gradient {
-    @apply bg-gradient-to-br from-muted-dark/30 via-card/20 to-muted-dark/30;
+    background: var(--gradient-subtle);
   }
 
-  /* Animations */
+  /* Professional Animations */
   .animate-fade-up {
     animation: fadeUp 0.6s ease-out forwards;
-    opacity: 0;
   }
 
   .animate-scale-in {
     animation: scaleIn 0.4s ease-out forwards;
-    opacity: 0;
   }
 
-  /* Neon Tech Icons */
+  /* Tech Icons */
   .tech-icon {
-    @apply w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-accent-blue/10 flex items-center justify-center text-primary border border-primary/30 transition-all duration-300 shadow-cyan;
-  }
-
-  .tech-icon:hover {
-    @apply shadow-blue scale-110 border-primary/60;
-  }
-
-  /* Glow text effect */
-  .text-glow {
-    text-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
-  }
-
-  /* Neon line divider */
-  .neon-divider {
-    @apply h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent shadow-cyan;
+    @apply w-12 h-12 p-3 rounded-lg bg-secondary-blue-light text-secondary-blue;
+    @apply transition-all duration-300 hover:scale-110 hover:shadow-blue;
   }
 }
 
